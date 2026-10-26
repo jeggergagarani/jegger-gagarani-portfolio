@@ -1,3 +1,4 @@
+<style>.reveal{opacity:1!important;transform:none!important}</style>
 <!doctype html>
 <html lang="en">
 <head>
@@ -278,3 +279,5 @@ if ('IntersectionObserver' in window) {
   </footer>
 </body>
 </html>
+
+<script>(()=>{const m=document.querySelector('.menu-toggle'),n=document.querySelector('#site-nav');m?.addEventListener('click',()=>{const o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',String(!o));n?.classList.toggle('open',!o)});n?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');m?.setAttribute('aria-expanded','false')}));const y=document.querySelector('#year');if(y)y.textContent=new Date().getFullYear();document.querySelectorAll('.reveal').forEach(i=>i.classList.add('visible'))})();</script>
